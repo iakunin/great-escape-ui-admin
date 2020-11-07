@@ -1,0 +1,9 @@
+{
+  "greatEscapeAdminUiApp": {
+    "QuestType": {
+      "null": "",
+      "ESCAPE": "ESCAPE",
+      "PERFORMANCE": "PERFORMANCE"
+    }
+  }
+}

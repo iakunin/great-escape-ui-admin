@@ -1,0 +1,11 @@
+{
+  "greatEscapeAdminUiApp": {
+    "FearLevel": {
+      "null": "",
+      "ABSENT": "ABSENT",
+      "MINIMAL": "MINIMAL",
+      "MODERATE": "MODERATE",
+      "EXTREME": "EXTREME"
+    }
+  }
+}

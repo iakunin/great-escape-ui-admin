@@ -1,0 +1,23 @@
+{
+  "greatEscapeAdminUiApp": {
+    "questPhoto": {
+      "home": {
+        "title": "Quest Photos",
+        "createLabel": "Создать новый Quest Photo",
+        "createOrEditLabel": "Создать или отредактировать Quest Photo",
+        "notFound": "No Quest Photos found"
+      },
+      "created": "Новый Quest Photo создан с идентификатором {{ param }}",
+      "updated": "Quest Photo обновлен с идентификатором {{ param }}",
+      "deleted": "Quest Photo удален с идентификатором {{ param }}",
+      "delete": {
+        "question": "Вы уверены что хотите удалить Quest Photo {{ id }}?"
+      },
+      "detail": {
+        "title": "Quest Photo"
+      },
+      "url": "Url",
+      "quest": "Quest"
+    }
+  }
+}

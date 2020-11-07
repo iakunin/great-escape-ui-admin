@@ -1,0 +1,10 @@
+{
+  "greatEscapeAdminUiApp": {
+    "QuestComplexity": {
+      "null": "",
+      "EASY": "EASY",
+      "MIDDLE": "MIDDLE",
+      "HARD": "HARD"
+    }
+  }
+}

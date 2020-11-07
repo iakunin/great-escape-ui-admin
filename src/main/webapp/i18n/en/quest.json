@@ -1,0 +1,33 @@
+{
+  "greatEscapeAdminUiApp": {
+    "quest": {
+      "home": {
+        "title": "Quests",
+        "createLabel": "Create a new Quest",
+        "createOrEditLabel": "Create or edit a Quest",
+        "notFound": "No Quests found"
+      },
+      "created": "A new Quest is created with identifier {{ param }}",
+      "updated": "A Quest is updated with identifier {{ param }}",
+      "deleted": "A Quest is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Quest {{ id }}?"
+      },
+      "detail": {
+        "title": "Quest"
+      },
+      "slug": "Slug",
+      "title": "Title",
+      "description": "Description",
+      "playersMinCount": "Players Min Count",
+      "playersMaxCount": "Players Max Count",
+      "durationInMinutes": "Duration In Minutes",
+      "complexity": "Complexity",
+      "fearLevel": "Fear Level",
+      "type": "Type",
+      "location": "Location",
+      "company": "Company",
+      "thematic": "Thematic"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "greatEscapeAdminUiApp": {
+    "metro": {
+      "home": {
+        "title": "Metros",
+        "createLabel": "Создать новый Metro",
+        "createOrEditLabel": "Создать или отредактировать Metro",
+        "notFound": "No Metros found"
+      },
+      "created": "Новый Metro создан с идентификатором {{ param }}",
+      "updated": "Metro обновлен с идентификатором {{ param }}",
+      "deleted": "Metro удален с идентификатором {{ param }}",
+      "delete": {
+        "question": "Вы уверены что хотите удалить Metro {{ id }}?"
+      },
+      "detail": {
+        "title": "Metro"
+      },
+      "slug": "Slug",
+      "title": "Title",
+      "location": "Location"
+    }
+  }
+}

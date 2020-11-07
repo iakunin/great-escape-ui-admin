@@ -1,0 +1,4 @@
+.jhipster/
+.scannerwork/
+node_modules/
+build/

@@ -1,0 +1,27 @@
+{
+  "greatEscapeAdminUiApp": {
+    "company": {
+      "home": {
+        "title": "Companies",
+        "createLabel": "Создать новый Company",
+        "createOrEditLabel": "Создать или отредактировать Company",
+        "notFound": "No Companies found"
+      },
+      "created": "Новый Company создан с идентификатором {{ param }}",
+      "updated": "Company обновлен с идентификатором {{ param }}",
+      "deleted": "Company удален с идентификатором {{ param }}",
+      "delete": {
+        "question": "Вы уверены что хотите удалить Company {{ id }}?"
+      },
+      "detail": {
+        "title": "Company"
+      },
+      "slug": "Slug",
+      "title": "Title",
+      "legalName": "Legal Name",
+      "taxpayerNumber": "Taxpayer Number",
+      "discountInPercents": "Discount In Percents",
+      "commissionInPercents": "Commission In Percents"
+    }
+  }
+}

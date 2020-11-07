@@ -1,0 +1,11 @@
+{
+  "greatEscapeAdminUiApp": {
+    "BookingStatus": {
+      "null": "",
+      "NEW": "NEW",
+      "CONFIRMED": "CONFIRMED",
+      "CANCELLED": "CANCELLED",
+      "COMPLETED": "COMPLETED"
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "greatEscapeAdminUiApp": {
+    "slot": {
+      "home": {
+        "title": "Slots",
+        "createLabel": "Создать новый Slot",
+        "createOrEditLabel": "Создать или отредактировать Slot",
+        "notFound": "No Slots found"
+      },
+      "created": "Новый Slot создан с идентификатором {{ param }}",
+      "updated": "Slot обновлен с идентификатором {{ param }}",
+      "deleted": "Slot удален с идентификатором {{ param }}",
+      "delete": {
+        "question": "Вы уверены что хотите удалить Slot {{ id }}?"
+      },
+      "detail": {
+        "title": "Slot"
+      },
+      "dateTimeLocal": "Date Time Local",
+      "dateTimeWithTimeZone": "Date Time With Time Zone",
+      "isAvailable": "Is Available",
+      "price": "Price",
+      "discountInPercents": "Discount In Percents",
+      "commissionInPercents": "Commission In Percents",
+      "externalId": "External Id",
+      "externalState": "External State",
+      "quest": "Quest",
+      "help": {
+        "externalState": "@TODO: change to Json.\nShould be sent to integration without changes during booking creation"
+      }
+    }
+  }
+}

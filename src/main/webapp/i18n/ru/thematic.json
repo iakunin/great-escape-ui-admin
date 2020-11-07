@@ -1,0 +1,24 @@
+{
+  "greatEscapeAdminUiApp": {
+    "thematic": {
+      "home": {
+        "title": "Thematics",
+        "createLabel": "Создать новый Thematic",
+        "createOrEditLabel": "Создать или отредактировать Thematic",
+        "notFound": "No Thematics found"
+      },
+      "created": "Новый Thematic создан с идентификатором {{ param }}",
+      "updated": "Thematic обновлен с идентификатором {{ param }}",
+      "deleted": "Thematic удален с идентификатором {{ param }}",
+      "delete": {
+        "question": "Вы уверены что хотите удалить Thematic {{ id }}?"
+      },
+      "detail": {
+        "title": "Thematic"
+      },
+      "slug": "Slug",
+      "title": "Title",
+      "quest": "Quest"
+    }
+  }
+}

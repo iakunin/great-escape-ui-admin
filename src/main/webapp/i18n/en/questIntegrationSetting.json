@@ -1,0 +1,27 @@
+{
+  "greatEscapeAdminUiApp": {
+    "questIntegrationSetting": {
+      "home": {
+        "title": "Quest Integration Settings",
+        "createLabel": "Create a new Quest Integration Setting",
+        "createOrEditLabel": "Create or edit a Quest Integration Setting",
+        "notFound": "No Quest Integration Settings found"
+      },
+      "created": "A new Quest Integration Setting is created with identifier {{ param }}",
+      "updated": "A Quest Integration Setting is updated with identifier {{ param }}",
+      "deleted": "A Quest Integration Setting is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Quest Integration Setting {{ id }}?"
+      },
+      "detail": {
+        "title": "Quest Integration Setting"
+      },
+      "type": "Type",
+      "settings": "Settings",
+      "quest": "Quest",
+      "help": {
+        "settings": "@TODO: convert to Json-field"
+      }
+    }
+  }
+}
