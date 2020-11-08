@@ -233,7 +233,9 @@ describe('Entities reducer tests', () => {
           payload: resolvedObject,
         },
       ];
-      await store.dispatch(createEntity({ id: 1 })).then(() => expect(store.getActions()).toEqual(expectedActions));
+      await store
+        .dispatch(createEntity({ id: '23cf92af-942d-4c9c-97c8-38920caaf5ec' }))
+        .then(() => expect(store.getActions()).toEqual(expectedActions));
     });
 
     it('dispatches ACTION_TYPES.UPDATE_METRO actions', async () => {
@@ -246,7 +248,9 @@ describe('Entities reducer tests', () => {
           payload: resolvedObject,
         },
       ];
-      await store.dispatch(updateEntity({ id: 1 })).then(() => expect(store.getActions()).toEqual(expectedActions));
+      await store
+        .dispatch(updateEntity({ id: '23cf92af-942d-4c9c-97c8-38920caaf5ec' }))
+        .then(() => expect(store.getActions()).toEqual(expectedActions));
     });
 
     it('dispatches ACTION_TYPES.DELETE_METRO actions', async () => {
