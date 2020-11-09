@@ -1,5 +1,5 @@
 export interface ICity {
-  id?: number;
+  id?: string;
   slug?: string;
   title?: string;
   timezone?: string;

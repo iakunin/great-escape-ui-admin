@@ -1,11 +1,11 @@
 import { IMetro } from 'app/shared/model/metro.model';
 
 export interface ILocation {
-  id?: number;
+  id?: string;
   address?: string;
   addressExplanation?: any;
   cityTitle?: string;
-  cityId?: number;
+  cityId?: string;
   metros?: IMetro[];
 }
 

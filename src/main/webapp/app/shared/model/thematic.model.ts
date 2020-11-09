@@ -1,7 +1,7 @@
 import { IQuest } from 'app/shared/model/quest.model';
 
 export interface IThematic {
-  id?: number;
+  id?: string;
   slug?: string;
   title?: string;
   quests?: IQuest[];

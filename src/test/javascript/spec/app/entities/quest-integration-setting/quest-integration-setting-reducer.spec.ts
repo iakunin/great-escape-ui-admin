@@ -241,7 +241,9 @@ describe('Entities reducer tests', () => {
           payload: resolvedObject,
         },
       ];
-      await store.dispatch(createEntity({ id: 1 })).then(() => expect(store.getActions()).toEqual(expectedActions));
+      await store
+        .dispatch(createEntity({ id: 'a0df3d57-36e0-42d6-a011-cfa83a36dd16' }))
+        .then(() => expect(store.getActions()).toEqual(expectedActions));
     });
 
     it('dispatches ACTION_TYPES.UPDATE_QUESTINTEGRATIONSETTING actions', async () => {
@@ -254,7 +256,9 @@ describe('Entities reducer tests', () => {
           payload: resolvedObject,
         },
       ];
-      await store.dispatch(updateEntity({ id: 1 })).then(() => expect(store.getActions()).toEqual(expectedActions));
+      await store
+        .dispatch(updateEntity({ id: '055983ca-5640-47b6-9556-8cf8f0f58a1b' }))
+        .then(() => expect(store.getActions()).toEqual(expectedActions));
     });
 
     it('dispatches ACTION_TYPES.DELETE_QUESTINTEGRATIONSETTING actions', async () => {

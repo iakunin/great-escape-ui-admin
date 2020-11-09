@@ -2,7 +2,7 @@ import { Moment } from 'moment';
 import { Gender } from 'app/shared/model/enumerations/gender.model';
 
 export interface IPlayer {
-  id?: number;
+  id?: string;
   name?: string;
   phone?: string;
   email?: string;
@@ -10,9 +10,9 @@ export interface IPlayer {
   gender?: Gender;
   subscriptionAllowed?: boolean;
   internalUserLogin?: string;
-  internalUserId?: number;
+  internalUserId?: string;
   companyTitle?: string;
-  companyId?: number;
+  companyId?: string;
 }
 
 export const defaultValue: Readonly<IPlayer> = {

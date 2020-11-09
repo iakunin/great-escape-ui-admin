@@ -1,17 +1,17 @@
 import { BookingStatus } from 'app/shared/model/enumerations/booking-status.model';
 
 export interface IBooking {
-  id?: number;
+  id?: string;
   status?: BookingStatus;
   price?: number;
   discountInPercents?: number;
   commissionInPercents?: number;
   slotDateTimeLocal?: string;
-  slotId?: number;
+  slotId?: string;
   questTitle?: string;
-  questId?: number;
+  questId?: string;
   playerPhone?: string;
-  playerId?: number;
+  playerId?: string;
 }
 
 export const defaultValue: Readonly<IBooking> = {};

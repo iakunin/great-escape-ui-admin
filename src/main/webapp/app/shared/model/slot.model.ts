@@ -1,7 +1,7 @@
 import { Moment } from 'moment';
 
 export interface ISlot {
-  id?: number;
+  id?: string;
   dateTimeLocal?: string;
   dateTimeWithTimeZone?: string;
   isAvailable?: boolean;
@@ -11,7 +11,7 @@ export interface ISlot {
   externalId?: string;
   externalState?: any;
   questTitle?: string;
-  questId?: number;
+  questId?: string;
 }
 
 export const defaultValue: Readonly<ISlot> = {

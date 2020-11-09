@@ -1,5 +1,5 @@
 export interface ICompany {
-  id?: number;
+  id?: string;
   slug?: string;
   title?: string;
   legalName?: string;

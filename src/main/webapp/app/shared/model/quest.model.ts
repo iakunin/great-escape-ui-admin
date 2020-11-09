@@ -4,7 +4,7 @@ import { FearLevel } from 'app/shared/model/enumerations/fear-level.model';
 import { QuestType } from 'app/shared/model/enumerations/quest-type.model';
 
 export interface IQuest {
-  id?: number;
+  id?: string;
   slug?: string;
   title?: string;
   description?: any;
@@ -15,9 +15,9 @@ export interface IQuest {
   fearLevel?: FearLevel;
   type?: QuestType;
   locationAddress?: string;
-  locationId?: number;
+  locationId?: string;
   companyTitle?: string;
-  companyId?: number;
+  companyId?: string;
   thematics?: IThematic[];
 }
 

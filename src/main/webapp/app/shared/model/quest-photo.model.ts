@@ -1,8 +1,8 @@
 export interface IQuestPhoto {
-  id?: number;
+  id?: string;
   url?: string;
   questTitle?: string;
-  questId?: number;
+  questId?: string;
 }
 
 export const defaultValue: Readonly<IQuestPhoto> = {};
