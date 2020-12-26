@@ -109,7 +109,7 @@ export default (state: PlayerState = initialState, action): PlayerState => {
   }
 };
 
-const apiUrl = 'api/players';
+const apiUrl = 'admin-api/players';
 
 // Actions
 

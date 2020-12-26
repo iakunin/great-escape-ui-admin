@@ -109,7 +109,7 @@ export default (state: CityState = initialState, action): CityState => {
   }
 };
 
-const apiUrl = 'api/cities';
+const apiUrl = 'admin-api/cities';
 
 // Actions
 

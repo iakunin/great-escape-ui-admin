@@ -121,7 +121,7 @@ export default (state: QuestState = initialState, action): QuestState => {
   }
 };
 
-const apiUrl = 'api/quests';
+const apiUrl = 'admin-api/quests';
 
 // Actions
 

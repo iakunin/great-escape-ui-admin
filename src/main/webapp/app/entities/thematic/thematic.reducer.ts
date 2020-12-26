@@ -109,7 +109,7 @@ export default (state: ThematicState = initialState, action): ThematicState => {
   }
 };
 
-const apiUrl = 'api/thematics';
+const apiUrl = 'admin-api/thematics';
 
 // Actions
 

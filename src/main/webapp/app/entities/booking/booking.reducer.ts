@@ -109,7 +109,7 @@ export default (state: BookingState = initialState, action): BookingState => {
   }
 };
 
-const apiUrl = 'api/bookings';
+const apiUrl = 'admin-api/bookings';
 
 // Actions
 

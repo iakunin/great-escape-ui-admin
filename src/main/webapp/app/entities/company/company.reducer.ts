@@ -109,7 +109,7 @@ export default (state: CompanyState = initialState, action): CompanyState => {
   }
 };
 
-const apiUrl = 'api/companies';
+const apiUrl = 'admin-api/companies';
 
 // Actions
 

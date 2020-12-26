@@ -109,7 +109,7 @@ export default (state: QuestPhotoState = initialState, action): QuestPhotoState 
   }
 };
 
-const apiUrl = 'api/quest-photos';
+const apiUrl = 'admin-api/quest-photos';
 
 // Actions
 

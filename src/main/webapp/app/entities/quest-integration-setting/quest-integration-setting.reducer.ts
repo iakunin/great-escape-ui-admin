@@ -121,7 +121,7 @@ export default (state: QuestIntegrationSettingState = initialState, action): Que
   }
 };
 
-const apiUrl = 'api/quest-integration-settings';
+const apiUrl = 'admin-api/quest-integration-settings';
 
 // Actions
 

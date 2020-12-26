@@ -121,7 +121,7 @@ export default (state: LocationState = initialState, action): LocationState => {
   }
 };
 
-const apiUrl = 'api/locations';
+const apiUrl = 'admin-api/locations';
 
 // Actions
 

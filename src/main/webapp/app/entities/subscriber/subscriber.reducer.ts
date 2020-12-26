@@ -109,7 +109,7 @@ export default (state: SubscriberState = initialState, action): SubscriberState 
   }
 };
 
-const apiUrl = 'api/subscribers';
+const apiUrl = 'admin-api/subscribers';
 
 // Actions
 

@@ -121,7 +121,7 @@ export default (state: SlotState = initialState, action): SlotState => {
   }
 };
 
-const apiUrl = 'api/slots';
+const apiUrl = 'admin-api/slots';
 
 // Actions
 

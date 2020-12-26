@@ -109,7 +109,7 @@ export default (state: MetroState = initialState, action): MetroState => {
   }
 };
 
-const apiUrl = 'api/metros';
+const apiUrl = 'admin-api/metros';
 
 // Actions
 
