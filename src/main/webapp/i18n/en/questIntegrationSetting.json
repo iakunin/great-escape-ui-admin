@@ -18,10 +18,7 @@
       },
       "type": "Type",
       "settings": "Settings",
-      "quest": "Quest",
-      "help": {
-        "settings": "@TODO: convert to Json-field"
-      }
+      "quest": "Quest"
     }
   }
 }

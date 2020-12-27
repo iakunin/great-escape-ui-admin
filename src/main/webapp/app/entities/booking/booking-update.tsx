@@ -117,9 +117,6 @@ export const BookingUpdate = (props: IBookingUpdateProps) => {
                     number: { value: true, errorMessage: translate('entity.validation.number') },
                   }}
                 />
-                <UncontrolledTooltip target="priceLabel">
-                  <Translate contentKey="greatEscapeAdminUiApp.booking.help.price" />
-                </UncontrolledTooltip>
               </AvGroup>
               <AvGroup>
                 <Label id="discountInPercentsLabel" for="booking-discountInPercents">
@@ -137,9 +134,6 @@ export const BookingUpdate = (props: IBookingUpdateProps) => {
                     number: { value: true, errorMessage: translate('entity.validation.number') },
                   }}
                 />
-                <UncontrolledTooltip target="discountInPercentsLabel">
-                  <Translate contentKey="greatEscapeAdminUiApp.booking.help.discountInPercents" />
-                </UncontrolledTooltip>
               </AvGroup>
               <AvGroup>
                 <Label id="commissionInPercentsLabel" for="booking-commissionInPercents">
@@ -157,9 +151,6 @@ export const BookingUpdate = (props: IBookingUpdateProps) => {
                     number: { value: true, errorMessage: translate('entity.validation.number') },
                   }}
                 />
-                <UncontrolledTooltip target="commissionInPercentsLabel">
-                  <Translate contentKey="greatEscapeAdminUiApp.booking.help.commissionInPercents" />
-                </UncontrolledTooltip>
               </AvGroup>
               <AvGroup>
                 <Label for="booking-slot">

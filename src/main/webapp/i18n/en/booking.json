@@ -22,12 +22,7 @@
       "commissionInPercents": "Commission In Percents",
       "slot": "Slot",
       "quest": "Quest",
-      "player": "Player",
-      "help": {
-        "price": "@TODO: copy price from Slot, cause Slot is mutable",
-        "discountInPercents": "@TODO: save calculated discount, cause it&#39;s mutable",
-        "commissionInPercents": "@TODO: save calculated commission, cause it&#39;s mutable"
-      }
+      "player": "Player"
     }
   }
 }

@@ -35,27 +35,18 @@ export const BookingDetail = (props: IBookingDetailProps) => {
             <span id="price">
               <Translate contentKey="greatEscapeAdminUiApp.booking.price">Price</Translate>
             </span>
-            <UncontrolledTooltip target="price">
-              <Translate contentKey="greatEscapeAdminUiApp.booking.help.price" />
-            </UncontrolledTooltip>
           </dt>
           <dd>{bookingEntity.price}</dd>
           <dt>
             <span id="discountInPercents">
               <Translate contentKey="greatEscapeAdminUiApp.booking.discountInPercents">Discount In Percents</Translate>
             </span>
-            <UncontrolledTooltip target="discountInPercents">
-              <Translate contentKey="greatEscapeAdminUiApp.booking.help.discountInPercents" />
-            </UncontrolledTooltip>
           </dt>
           <dd>{bookingEntity.discountInPercents}</dd>
           <dt>
             <span id="commissionInPercents">
               <Translate contentKey="greatEscapeAdminUiApp.booking.commissionInPercents">Commission In Percents</Translate>
             </span>
-            <UncontrolledTooltip target="commissionInPercents">
-              <Translate contentKey="greatEscapeAdminUiApp.booking.help.commissionInPercents" />
-            </UncontrolledTooltip>
           </dt>
           <dd>{bookingEntity.commissionInPercents}</dd>
           <dt>

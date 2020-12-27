@@ -195,9 +195,6 @@ export const SlotUpdate = (props: ISlotUpdateProps) => {
                   <Translate contentKey="greatEscapeAdminUiApp.slot.externalState">External State</Translate>
                 </Label>
                 <AvInput id="slot-externalState" type="textarea" name="externalState" />
-                <UncontrolledTooltip target="externalStateLabel">
-                  <Translate contentKey="greatEscapeAdminUiApp.slot.help.externalState" />
-                </UncontrolledTooltip>
               </AvGroup>
               <AvGroup>
                 <Label for="slot-quest">

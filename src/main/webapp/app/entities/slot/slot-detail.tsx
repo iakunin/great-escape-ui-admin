@@ -75,9 +75,6 @@ export const SlotDetail = (props: ISlotDetailProps) => {
             <span id="externalState">
               <Translate contentKey="greatEscapeAdminUiApp.slot.externalState">External State</Translate>
             </span>
-            <UncontrolledTooltip target="externalState">
-              <Translate contentKey="greatEscapeAdminUiApp.slot.help.externalState" />
-            </UncontrolledTooltip>
           </dt>
           <dd>{slotEntity.externalState}</dd>
           <dt>

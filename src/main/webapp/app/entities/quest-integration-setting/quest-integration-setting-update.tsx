@@ -110,9 +110,6 @@ export const QuestIntegrationSettingUpdate = (props: IQuestIntegrationSettingUpd
                   <Translate contentKey="greatEscapeAdminUiApp.questIntegrationSetting.settings">Settings</Translate>
                 </Label>
                 <AvInput id="quest-integration-setting-settings" type="textarea" name="settings" />
-                <UncontrolledTooltip target="settingsLabel">
-                  <Translate contentKey="greatEscapeAdminUiApp.questIntegrationSetting.help.settings" />
-                </UncontrolledTooltip>
               </AvGroup>
               <AvGroup>
                 <Label for="quest-integration-setting-quest">

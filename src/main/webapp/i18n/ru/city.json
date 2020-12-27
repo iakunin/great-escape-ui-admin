@@ -18,10 +18,7 @@
       },
       "slug": "Slug",
       "title": "Title",
-      "timezone": "Timezone",
-      "help": {
-        "timezone": "@TODO: store as Java TimeZone or ZoneId object"
-      }
+      "timezone": "Timezone"
     }
   }
 }

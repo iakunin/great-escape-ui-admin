@@ -36,9 +36,6 @@ export const QuestIntegrationSettingDetail = (props: IQuestIntegrationSettingDet
             <span id="settings">
               <Translate contentKey="greatEscapeAdminUiApp.questIntegrationSetting.settings">Settings</Translate>
             </span>
-            <UncontrolledTooltip target="settings">
-              <Translate contentKey="greatEscapeAdminUiApp.questIntegrationSetting.help.settings" />
-            </UncontrolledTooltip>
           </dt>
           <dd>{questIntegrationSettingEntity.settings}</dd>
           <dt>

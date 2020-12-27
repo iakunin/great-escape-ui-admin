@@ -114,9 +114,6 @@ export const CityUpdate = (props: ICityUpdateProps) => {
                     minLength: { value: 1, errorMessage: translate('entity.validation.minlength', { min: 1 }) },
                   }}
                 />
-                <UncontrolledTooltip target="timezoneLabel">
-                  <Translate contentKey="greatEscapeAdminUiApp.city.help.timezone" />
-                </UncontrolledTooltip>
               </AvGroup>
               <Button tag={Link} id="cancel-save" to="/city" replace color="info">
                 <FontAwesomeIcon icon="arrow-left" />

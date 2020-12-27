@@ -41,9 +41,6 @@ export const CityDetail = (props: ICityDetailProps) => {
             <span id="timezone">
               <Translate contentKey="greatEscapeAdminUiApp.city.timezone">Timezone</Translate>
             </span>
-            <UncontrolledTooltip target="timezone">
-              <Translate contentKey="greatEscapeAdminUiApp.city.help.timezone" />
-            </UncontrolledTooltip>
           </dt>
           <dd>{cityEntity.timezone}</dd>
         </dl>
