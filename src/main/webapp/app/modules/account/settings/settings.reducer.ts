@@ -51,7 +51,7 @@ export default (state: SettingsState = initialState, action): SettingsState => {
 };
 
 // Actions
-const apiUrl = 'api/account';
+const apiUrl = 'admin-api/account';
 
 export const saveAccountSettings: (account: any) => void = account => async dispatch => {
   await dispatch({
