@@ -6,8 +6,6 @@ export const ACTION_TYPES = {
   FETCH_LOGS: 'administration/FETCH_LOGS',
   FETCH_LOGS_CHANGE_LEVEL: 'administration/FETCH_LOGS_CHANGE_LEVEL',
   FETCH_HEALTH: 'administration/FETCH_HEALTH',
-  FETCH_METRICS: 'administration/FETCH_METRICS',
-  FETCH_THREAD_DUMP: 'administration/FETCH_THREAD_DUMP',
   FETCH_CONFIGURATIONS: 'administration/FETCH_CONFIGURATIONS',
   FETCH_ENV: 'administration/FETCH_ENV',
   FETCH_AUDITS: 'administration/FETCH_AUDITS',
@@ -20,8 +18,6 @@ const initialState = {
     loggers: [] as any[],
   },
   health: {} as any,
-  metrics: {} as any,
-  threadDump: [],
   configuration: {
     configProps: {} as any,
     env: {} as any,
@@ -36,8 +32,6 @@ export type AdministrationState = Readonly<typeof initialState>;
 
 export default (state: AdministrationState = initialState, action): AdministrationState => {
   switch (action.type) {
-    case REQUEST(ACTION_TYPES.FETCH_METRICS):
-    case REQUEST(ACTION_TYPES.FETCH_THREAD_DUMP):
     case REQUEST(ACTION_TYPES.FETCH_LOGS):
     case REQUEST(ACTION_TYPES.FETCH_CONFIGURATIONS):
     case REQUEST(ACTION_TYPES.FETCH_ENV):
@@ -48,8 +42,6 @@ export default (state: AdministrationState = initialState, action): Administrati
         errorMessage: null,
         loading: true,
       };
-    case FAILURE(ACTION_TYPES.FETCH_METRICS):
-    case FAILURE(ACTION_TYPES.FETCH_THREAD_DUMP):
     case FAILURE(ACTION_TYPES.FETCH_LOGS):
     case FAILURE(ACTION_TYPES.FETCH_CONFIGURATIONS):
     case FAILURE(ACTION_TYPES.FETCH_ENV):
@@ -59,18 +51,6 @@ export default (state: AdministrationState = initialState, action): Administrati
         ...state,
         loading: false,
         errorMessage: action.payload,
-      };
-    case SUCCESS(ACTION_TYPES.FETCH_METRICS):
-      return {
-        ...state,
-        loading: false,
-        metrics: action.payload.data,
-      };
-    case SUCCESS(ACTION_TYPES.FETCH_THREAD_DUMP):
-      return {
-        ...state,
-        loading: false,
-        threadDump: action.payload.data,
       };
     case SUCCESS(ACTION_TYPES.FETCH_LOGS):
       return {
@@ -121,16 +101,6 @@ export default (state: AdministrationState = initialState, action): Administrati
 export const systemHealth = () => ({
   type: ACTION_TYPES.FETCH_HEALTH,
   payload: axios.get('management/health'),
-});
-
-export const systemMetrics = () => ({
-  type: ACTION_TYPES.FETCH_METRICS,
-  payload: axios.get('management/jhimetrics'),
-});
-
-export const systemThreadDump = () => ({
-  type: ACTION_TYPES.FETCH_THREAD_DUMP,
-  payload: axios.get('management/threaddump'),
 });
 
 export const getLoggers = () => ({

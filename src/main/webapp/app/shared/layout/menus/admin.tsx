@@ -11,9 +11,6 @@ const adminMenuItems = (
     <MenuItem icon="user" to="/admin/user-management">
       <Translate contentKey="global.menu.admin.userManagement">User management</Translate>
     </MenuItem>
-    <MenuItem icon="tachometer-alt" to="/admin/metrics">
-      <Translate contentKey="global.menu.admin.metrics">Metrics</Translate>
-    </MenuItem>
     <MenuItem icon="heart" to="/admin/health">
       <Translate contentKey="global.menu.admin.health">Health</Translate>
     </MenuItem>

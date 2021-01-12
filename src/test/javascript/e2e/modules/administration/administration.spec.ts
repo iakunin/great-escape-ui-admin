@@ -34,12 +34,6 @@ describe('Administration', () => {
     expect(await heading.isPresent()).to.be.true;
   });
 
-  it('should load metrics', async () => {
-    await navBarPage.clickOnAdminMenuItem('metrics');
-    await waitUntilDisplayed(element(by.id('metrics-page-heading')));
-    expect(await element(by.id('metrics-page-heading')).getText()).to.eq('Application Metrics');
-  });
-
   it('should load health', async () => {
     await navBarPage.clickOnAdminMenuItem('health');
     expect(await element(by.id('health-page-heading')).getText()).to.eq('Health Checks');

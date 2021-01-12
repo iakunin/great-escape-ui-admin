@@ -8,8 +8,6 @@ import { REQUEST, FAILURE, SUCCESS } from 'app/shared/reducers/action-type.util'
 import administration, {
   ACTION_TYPES,
   systemHealth,
-  systemMetrics,
-  systemThreadDump,
   getLoggers,
   changeLogLevel,
   getConfigurations,
@@ -35,7 +33,6 @@ describe('Administration reducer tests', () => {
       totalItems: 0,
     });
     expect(isEmpty(state.logs.loggers));
-    expect(isEmpty(state.threadDump));
     expect(isEmpty(state.audits));
   }
 
@@ -57,8 +54,6 @@ describe('Administration reducer tests', () => {
         [
           REQUEST(ACTION_TYPES.FETCH_LOGS),
           REQUEST(ACTION_TYPES.FETCH_HEALTH),
-          REQUEST(ACTION_TYPES.FETCH_METRICS),
-          REQUEST(ACTION_TYPES.FETCH_THREAD_DUMP),
           REQUEST(ACTION_TYPES.FETCH_CONFIGURATIONS),
           REQUEST(ACTION_TYPES.FETCH_ENV),
           REQUEST(ACTION_TYPES.FETCH_AUDITS),
@@ -80,8 +75,6 @@ describe('Administration reducer tests', () => {
         [
           FAILURE(ACTION_TYPES.FETCH_LOGS),
           FAILURE(ACTION_TYPES.FETCH_HEALTH),
-          FAILURE(ACTION_TYPES.FETCH_METRICS),
-          FAILURE(ACTION_TYPES.FETCH_THREAD_DUMP),
           FAILURE(ACTION_TYPES.FETCH_CONFIGURATIONS),
           FAILURE(ACTION_TYPES.FETCH_ENV),
           FAILURE(ACTION_TYPES.FETCH_AUDITS),
@@ -123,26 +116,6 @@ describe('Administration reducer tests', () => {
       expect(toTest).toMatchObject({
         loading: false,
         health: payload.data,
-      });
-    });
-
-    it('should update state according to a successful fetch metrics request', () => {
-      const payload = { data: { version: '3.1.3', gauges: {} } };
-      const toTest = administration(undefined, { type: SUCCESS(ACTION_TYPES.FETCH_METRICS), payload });
-
-      expect(toTest).toMatchObject({
-        loading: false,
-        metrics: payload.data,
-      });
-    });
-
-    it('should update state according to a successful fetch thread dump request', () => {
-      const payload = { data: [{ threadName: 'hz.gateway.cached.thread-6', threadId: 9266 }] };
-      const toTest = administration(undefined, { type: SUCCESS(ACTION_TYPES.FETCH_THREAD_DUMP), payload });
-
-      expect(toTest).toMatchObject({
-        loading: false,
-        threadDump: payload.data,
       });
     });
 
@@ -205,30 +178,6 @@ describe('Administration reducer tests', () => {
         },
       ];
       await store.dispatch(systemHealth()).then(() => expect(store.getActions()).toEqual(expectedActions));
-    });
-    it('dispatches FETCH_METRICS_PENDING and FETCH_METRICS_FULFILLED actions', async () => {
-      const expectedActions = [
-        {
-          type: REQUEST(ACTION_TYPES.FETCH_METRICS),
-        },
-        {
-          type: SUCCESS(ACTION_TYPES.FETCH_METRICS),
-          payload: resolvedObject,
-        },
-      ];
-      await store.dispatch(systemMetrics()).then(() => expect(store.getActions()).toEqual(expectedActions));
-    });
-    it('dispatches FETCH_THREAD_DUMP_PENDING and FETCH_THREAD_DUMP_FULFILLED actions', async () => {
-      const expectedActions = [
-        {
-          type: REQUEST(ACTION_TYPES.FETCH_THREAD_DUMP),
-        },
-        {
-          type: SUCCESS(ACTION_TYPES.FETCH_THREAD_DUMP),
-          payload: resolvedObject,
-        },
-      ];
-      await store.dispatch(systemThreadDump()).then(() => expect(store.getActions()).toEqual(expectedActions));
     });
     it('dispatches FETCH_LOGS_PENDING and FETCH_LOGS_FULFILLED actions', async () => {
       const expectedActions = [
