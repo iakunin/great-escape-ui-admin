@@ -52,7 +52,7 @@ It dynamically generates the `service-worker.js` file.
 
 ### Managing dependencies
 
-For example, to add [Leaflet][] library as a runtime dependency of your application, you would run 
+For example, to add [Leaflet][] library as a runtime dependency of your application, you would run
 following command:
 
 ```
@@ -66,7 +66,7 @@ you would run following command:
 npm install --save-dev --save-exact @types/leaflet
 ```
 
-Then you would import the JS and CSS files specified in library's installation instructions so that 
+Then you would import the JS and CSS files specified in library's installation instructions so that
 [Webpack][] knows about them:
 Note: There are still a few other things remaining to do for Leaflet that we won't detail here.
 
@@ -74,7 +74,7 @@ For further instructions on how to develop with JHipster, have a look at [Using 
 
 ## Testing
 
-Unit tests are run by [Jest][] and written with [Jasmine][]. They're located in 
+Unit tests are run by [Jest][] and written with [Jasmine][]. They're located in
 [src/test/javascript/](src/test/javascript/) and can be run with:
 
 ```
@@ -85,14 +85,14 @@ For more information, refer to the [Running tests page][].
 
 ### Code quality
 
-Sonar is used to analyse code quality. You can start a local Sonar server 
+Sonar is used to analyse code quality. You can start a local Sonar server
 (accessible on http://localhost:9001) with:
 
 ```
 docker-compose -f src/main/docker/sonar.yml up -d
 ```
 
-You can run a Sonar analysis with using the 
+You can run a Sonar analysis with using the
 [sonar-scanner](https://docs.sonarqube.org/display/SCAN/Analyzing+with+SonarQube+Scanner).
 
 Then, run a Sonar analysis:
@@ -105,8 +105,8 @@ For more information, refer to the [Code quality page][].
 
 ## Continuous Integration (optional)
 
-To configure CI for your project, run the ci-cd sub-generator (`jhipster ci-cd`), this will let you 
-generate configuration files for a number of Continuous Integration systems. 
+To configure CI for your project, run the ci-cd sub-generator (`jhipster ci-cd`), this will let you
+generate configuration files for a number of Continuous Integration systems.
 Consult the [Setting up Continuous Integration][] page for more information.
 
 [jhipster homepage and latest documentation]: https://www.jhipster.tech
