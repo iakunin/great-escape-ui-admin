@@ -85,6 +85,11 @@ module.exports = webpackMerge(commonConfig({ env: ENV }), {
     ]
   },
   plugins: [
+    new webpack.DefinePlugin({
+      'process.env': {
+        SERVER_API_URL: `'https://api.great-escape.ru'`,
+      }
+    }),
     new MiniCssExtractPlugin({
       // Options similar to the same options in webpackOptions.output
       filename: 'content/[name].[hash].css',

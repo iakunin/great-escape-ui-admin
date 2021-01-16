@@ -62,6 +62,11 @@ module.exports = (options) => webpackMerge(commonConfig({ env: ENV }), {
   },
   stats: process.env.JHI_DISABLE_WEBPACK_LOGS ? 'none' : options.stats,
   plugins: [
+    new webpack.DefinePlugin({
+      'process.env': {
+        SERVER_API_URL: `''`,
+      }
+    }),
     process.env.JHI_DISABLE_WEBPACK_LOGS
       ? null
       : new SimpleProgressWebpackPlugin({
