@@ -132,6 +132,12 @@ export const QuestUpdate = (props: IQuestUpdateProps) => {
                 <AvInput id="quest-description" type="textarea" name="description" />
               </AvGroup>
               <AvGroup>
+                <Label id="detailsLabel" for="quest-details">
+                  <Translate contentKey="greatEscapeAdminUiApp.quest.details">Details</Translate>
+                </Label>
+                <AvInput id="quest-details" type="textarea" name="details" />
+              </AvGroup>
+              <AvGroup>
                 <Label id="playersMinCountLabel" for="quest-playersMinCount">
                   <Translate contentKey="greatEscapeAdminUiApp.quest.playersMinCount">Players Min Count</Translate>
                 </Label>

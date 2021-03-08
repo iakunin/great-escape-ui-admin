@@ -19,6 +19,7 @@
       "slug": "Slug",
       "title": "Title",
       "description": "Description",
+      "details": "Details",
       "playersMinCount": "Players Min Count",
       "playersMaxCount": "Players Max Count",
       "durationInMinutes": "Duration In Minutes",
