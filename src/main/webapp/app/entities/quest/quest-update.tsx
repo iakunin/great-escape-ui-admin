@@ -186,6 +186,38 @@ export const QuestUpdate = (props: IQuestUpdateProps) => {
                 />
               </AvGroup>
               <AvGroup>
+                <Label id="discountInPercentsLabel" for="quest-discountInPercents">
+                  <Translate contentKey="greatEscapeAdminUiApp.quest.discountInPercents">Discount In Percents</Translate>
+                </Label>
+                <AvField
+                  id="quest-discountInPercents"
+                  type="string"
+                  className="form-control"
+                  name="discountInPercents"
+                  validate={{
+                    min: { value: 0, errorMessage: translate('entity.validation.min', { min: 0 }) },
+                    max: { value: 100, errorMessage: translate('entity.validation.max', { max: 100 }) },
+                    number: { value: true, errorMessage: translate('entity.validation.number') },
+                  }}
+                />
+              </AvGroup>
+              <AvGroup>
+                <Label id="commissionInPercentsLabel" for="quest-commissionInPercents">
+                  <Translate contentKey="greatEscapeAdminUiApp.quest.commissionInPercents">Commission In Percents</Translate>
+                </Label>
+                <AvField
+                  id="quest-commissionInPercents"
+                  type="string"
+                  className="form-control"
+                  name="commissionInPercents"
+                  validate={{
+                    min: { value: 0, errorMessage: translate('entity.validation.min', { min: 0 }) },
+                    max: { value: 100, errorMessage: translate('entity.validation.max', { max: 100 }) },
+                    number: { value: true, errorMessage: translate('entity.validation.number') },
+                  }}
+                />
+              </AvGroup>
+              <AvGroup>
                 <Label id="complexityLabel" for="quest-complexity">
                   <Translate contentKey="greatEscapeAdminUiApp.quest.complexity">Complexity</Translate>
                 </Label>

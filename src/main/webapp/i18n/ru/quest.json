@@ -23,6 +23,8 @@
       "playersMinCount": "Players Min Count",
       "playersMaxCount": "Players Max Count",
       "durationInMinutes": "Duration In Minutes",
+      "discountInPercents": "Discount In Percents",
+      "commissionInPercents": "Commission In Percents",
       "complexity": "Complexity",
       "fearLevel": "Fear Level",
       "type": "Type",
