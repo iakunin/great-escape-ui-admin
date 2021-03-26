@@ -289,6 +289,12 @@ export const QuestUpdate = (props: IQuestUpdateProps) => {
                     : null}
                 </AvInput>
               </AvGroup>
+              <AvGroup check>
+                <Label id="isPublicLabel">
+                  <AvInput id="player-isPublic" type="checkbox" className="form-check-input" name="isPublic" />
+                  <Translate contentKey="greatEscapeAdminUiApp.quest.isPublic">Is Public</Translate>
+                </Label>
+              </AvGroup>
               <Button tag={Link} id="cancel-save" to="/quest" replace color="info">
                 <FontAwesomeIcon icon="arrow-left" />
                 &nbsp;

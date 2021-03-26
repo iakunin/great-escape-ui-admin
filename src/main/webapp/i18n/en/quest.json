@@ -28,7 +28,8 @@
       "type": "Type",
       "location": "Location",
       "company": "Company",
-      "thematic": "Thematic"
+      "thematic": "Thematic",
+      "isPublic": "Is Public"
     }
   }
 }
