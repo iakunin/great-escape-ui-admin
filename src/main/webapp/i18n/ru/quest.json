@@ -31,7 +31,8 @@
       "location": "Location",
       "company": "Company",
       "thematic": "Thematic",
-      "isPublic": "Is Public"
+      "isPublic": "Is Public",
+      "coverPhoto": "Cover Photo"
     }
   }
 }

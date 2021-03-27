@@ -327,6 +327,19 @@ export const QuestUpdate = (props: IQuestUpdateProps) => {
                   <Translate contentKey="greatEscapeAdminUiApp.quest.isPublic">Is Public</Translate>
                 </Label>
               </AvGroup>
+              <AvGroup>
+                <Label id="coverPhotoLabel" for="quest-coverPhoto">
+                  <Translate contentKey="greatEscapeAdminUiApp.quest.coverPhoto">Url</Translate>
+                </Label>
+                <AvField
+                  id="quest-coverPhoto"
+                  type="text"
+                  name="coverPhoto"
+                  validate={{
+                    required: { value: true, errorMessage: translate('entity.validation.required') },
+                  }}
+                />
+              </AvGroup>
               <Button tag={Link} id="cancel-save" to="/quest" replace color="info">
                 <FontAwesomeIcon icon="arrow-left" />
                 &nbsp;
