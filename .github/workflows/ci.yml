@@ -39,6 +39,7 @@ jobs:
             .
 
       - name: Docker tag default & Publish docker image
+        if: ${{ github.event_name != 'pull_request' }}
         run: |-
           docker tag "$IMAGE:$GITHUB_SHA" \
             "eu.gcr.io/$PROJECT_ID/$IMAGE:$GITHUB_SHA"
