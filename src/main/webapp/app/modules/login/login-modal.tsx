@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { MouseEventHandler } from 'react';
 import { Translate, translate } from 'react-jhipster';
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter, Label, Alert, Row, Col } from 'reactstrap';
 import { AvForm, AvField, AvGroup, AvInput } from 'availity-reactstrap-validation';
@@ -8,7 +8,7 @@ export interface ILoginModalProps {
   showModal: boolean;
   loginError: boolean;
   handleLogin: Function;
-  handleClose: Function;
+  handleClose: MouseEventHandler;
 }
 
 class LoginModal extends React.Component<ILoginModalProps> {
@@ -69,7 +69,7 @@ class LoginModal extends React.Component<ILoginModalProps> {
             </Alert>
           </ModalBody>
           <ModalFooter>
-            <Button color="secondary" onClick={handleClose} tabIndex="1">
+            <Button color="secondary" onClick={handleClose} tabIndex={1}>
               <Translate contentKey="entity.action.cancel">Cancel</Translate>
             </Button>{' '}
             <Button color="primary" type="submit">

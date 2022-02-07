@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { MouseEventHandler } from 'react';
 import { DropdownItem } from 'reactstrap';
 import { NavDropdown } from './menu-components';
 import { locales, languages } from 'app/config/translation';
 
-export const LocaleMenu = ({ currentLocale, onClick }: { currentLocale: string; onClick: Function }) =>
+export const LocaleMenu = ({ currentLocale, onClick }: { currentLocale: string; onClick: MouseEventHandler }) =>
   Object.keys(languages).length > 1 ? (
     <NavDropdown icon="flag" name={currentLocale ? languages[currentLocale].name : undefined}>
       {locales.map(locale => (
