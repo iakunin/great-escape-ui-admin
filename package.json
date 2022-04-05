@@ -101,7 +101,7 @@
     "friendly-errors-webpack-plugin": "1.7.0",
     "generator-jhipster": "7.6.0",
     "html-webpack-plugin": "4.3.0",
-    "husky": "4.2.5",
+    "husky": "7.0.4",
     "identity-obj-proxy": "3.0.0",
     "jest": "25.5.4",
     "jest-junit": "10.0.0",
