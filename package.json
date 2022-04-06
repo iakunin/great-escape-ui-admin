@@ -39,7 +39,7 @@
     "loaders.css": "0.1.2",
     "lodash": "^4.17.21",
     "moment": "2.29.2",
-    "react": "16.13.1",
+    "react": "16.14.0",
     "react-dom": "16.13.1",
     "react-hot-loader": "4.13.0",
     "react-jhipster": "0.11.0",
