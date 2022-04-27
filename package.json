@@ -61,7 +61,7 @@
     "uuid": "8.3.2"
   },
   "devDependencies": {
-    "@openapitools/openapi-generator-cli": "2.4.26",
+    "@openapitools/openapi-generator-cli": "2.5.1",
     "@types/chai": "4.3.1",
     "@types/enzyme": "3.10.11",
     "@types/jest": "27.4.1",
