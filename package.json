@@ -73,7 +73,7 @@
     "@types/react-redux": "7.1.24",
     "@types/react-router-dom": "5.3.3",
     "@types/redux": "3.6.31",
-    "@types/selenium-webdriver": "4.0.19",
+    "@types/selenium-webdriver": "4.0.20",
     "@types/webpack-env": "1.16.3",
     "@typescript-eslint/eslint-plugin": "2.34.0",
     "@typescript-eslint/parser": "2.34.0",
