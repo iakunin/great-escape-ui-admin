@@ -78,7 +78,7 @@
     "@typescript-eslint/eslint-plugin": "2.34.0",
     "@typescript-eslint/parser": "2.34.0",
     "autoprefixer": "9.8.8",
-    "browser-sync": "^2.29.1",
+    "browser-sync": "^2.29.3",
     "browser-sync-webpack-plugin": "2.3.0",
     "cache-loader": "4.1.0",
     "chai": "4.3.7",
