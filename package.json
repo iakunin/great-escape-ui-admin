@@ -62,7 +62,7 @@
   },
   "devDependencies": {
     "@openapitools/openapi-generator-cli": "2.7.0",
-    "@types/chai": "4.3.6",
+    "@types/chai": "4.3.7",
     "@types/enzyme": "3.10.11",
     "@types/jest": "27.4.1",
     "@types/lodash": "4.14.186",
