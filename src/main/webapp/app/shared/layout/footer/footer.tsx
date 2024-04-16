@@ -7,7 +7,7 @@ const Footer = props => (
   <div className="footer page-content">
     <Row>
       <Col md="12">
-        <p>© 2020-2021, Great&nbsp;Escape</p>
+        <p>© 2020-2024, Great&nbsp;Escape</p>
       </Col>
     </Row>
   </div>
